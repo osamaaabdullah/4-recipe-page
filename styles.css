@@ -111,12 +111,16 @@ th,td{
 
     .card{
         margin: 1rem;
-        padding: 1rem;
+        padding: 2rem;
         max-width: 100%;
         border-radius: 1rem;
     }
 
     .card img{
         border-radius: 1rem;
+    }
+
+    .introduction, .ingredient-container, .instruction-container, .nutrition-table{
+        margin: 0;
     }
 }
