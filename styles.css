@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*tag selectors*/
+
+body{
+    min-height: 100svh;
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Outfit;
+}
+
+.card img{
+    width: 100%;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+li{
+    font-size: 1 rem;
+    line-height: 150%;
+    padding: 0 0 0 1rem; 
+    
+}
+
+ol,ul{
+    padding-left: 1rem;
+}
+
+ul li::marker{
+    font-size: 0.75rem;
+}
+
+
+ol li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    padding: 1rem;
+}
+
+
+
+hr{
+    width: 90%;
+    align-self: center;
+}
+
+table{
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th,td{
+    padding: 1rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+/*class selectors*/
+.card{
+    background-color: hsl(330, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.introduction h1{
+    font-family: Young Serif;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+}
+
+.preparation-time-table{
+    background-color: hsl(30, 54%, 90%);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.preparation-time-table h3{
+    color: hsl(332, 51%, 32%);
+}
+
+.introduction, .ingredient-container, .instruction-container, .nutrition-table{
+    margin: 1rem;
+}
+
+
+.ingredient-container h2, .instruction-container h2, .nutrition-table h2{
+    color: hsl(14, 45%, 36%);
+    font-family: Young Serif;
+    font-weight: normal;
+    letter-spacing: 0.25px;
+}
+
+@media(min-width: 801px) {
+    
+    main{
+        margin: 4rem;
+        width: 50%;
+    }
+
+    .card{
+        margin: 1rem;
+        padding: 1rem;
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+
+    .card img{
+        border-radius: 1rem;
+    }
+}
